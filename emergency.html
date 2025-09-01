@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เหตุด่วน - HelpLine</title>
+    <link rel="stylesheet" href="emergency.css">
+    <script src="https://kit.fontawesome.com/b45c5f1a08.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <!-- logo -->
+            <div class="logo">
+                <a href="index.html" class="logo">HelpLine</a>    
+            </div>
+            <!-- responsive navbar for phone -->
+            <div class="menu-icon" onclick="toggleMenu()">
+                <i class="fa-solid fa-bars fa-sm" style="color: #000000;"></i>
+            </div>
+            <!-- navbar -->
+            <div class="menu" id="nav-menu">
+                <ul class="list">
+                    <li><a href="emergency.html">เหตุด่วน</a></li>
+                    <li><a href="medical.html">การแพทย์</a></li>
+                    <li><a href="travle.html">การเดินทาง</a></li>
+                    <li><a href="agency.html">หน่วยงาน</a></li>
+                    <li><a href="utilities.html">สาธารณูปโภค</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="first-section">
+        <h1>เบอร์โทรฉุกเฉินเกี่ยวกับเหตุด่วน</h1>
+        <p>เบอร์โทรฉุกเฉินเพื่อแจ้งเหตุด่วนเหตุร้ายตามประเภทต่างๆ</p>
+    </div>
+
+    <div class="card-container">
+        <div class="card-one">
+            <img src="img/police 4.jpg" alt="Police">
+            <div class="card-content">
+                <h3>191 แจ้งเหตุด่วน</h3>
+                <p>โทร 191 เพื่อแจ้งเหตุด่วนทุกชนิดกับตำรวจ</p>
+                <p>สำนักงานตำรวจแห่งชาติ</p>
+                <a href="tel:191" onclick="return confirm('แน่ใจว่าจะโทรออก 191 หรือไม่?')" class="call-circle">
+                    <i class="fa-solid fa-phone fa-2lg" style="color: #ffffff;"></i>   
+                </a>
+            </div>
+        </div>
+
+        <div class="card-two">
+            <img src="img/matt-c-newCTAG6kPE-unsplash.jpg" alt="firefighter">
+            <div class="card-content">
+                <h3>199 แจ้งเหตุเพลิงไหม้</h3>
+                <p>โทร 199 เพื่อแจ้งเหตุเพลิงไหม้</p>
+                <p class="agency">หน่วยดับเพลิงและกู้ภัย</p>
+                <a href="tel:199" onclick="return confirm('แน่ใจว่าจะโทรออก 199 หรือไม่?')" class="call-circle">
+                    <i class="fa-solid fa-phone fa-2lg" style="color: #ffffff;"></i>   
+                </a>
+            </div>
+        </div>
+
+        <div class="card-three">
+            <img src="img/crime9.jpg" alt="firefighter">
+            <div class="card-content">
+                <h3>1195 แจ้งเหตุอาชญากรรม</h3>
+                <p>โทร 1195 เพื่อแจ้งเหตุอาญากรรม คดีร้ายแรง</p>
+                <p class="agency">กองปราบปราม</p>
+                <a href="tel:1195" onclick="return confirm('แน่ใจว่าจะโทรออก 1195 หรือไม่?')" class="call-circle">
+                    <i class="fa-solid fa-phone fa-2lg" style="color: #ffffff;"></i>   
+                </a>
+            </div>
+        </div>
+
+        <div class="card-four">
+            <img src="img/carparking6.jpg" alt="firefighter">
+            <div class="card-content">
+                <h3>1192 แจ้งเหตุรถหาย</h3>
+                <p>โทร 1192 เพื่อแจ้งเหตุรถหาย</p>
+                <p class="agency">ศูนย์ปราบปรามการโจรกรรมรถ</p>
+                <a href="tel:1192" onclick="return confirm('แน่ใจว่าจะโทรออก 1192 หรือไม่?')" class="call-circle">
+                    <i class="fa-solid fa-phone fa-2lg" style="color: #ffffff;"></i>   
+                </a>
+            </div>
+        </div>
+
+        <div class="card-five">
+            <img src="img/missing personnnnnnnn.jpg" alt="missing personnnnnnnn">
+            <div class="card-content">
+                <h3>1300 แจ้งเหตุคนหาย</h3>
+                <p>โทร 1300 เพื่อแจ้งเหตุคนหาย</p>
+                <p class="agency">ศูนย์ปชาบดี</p>
+                <a href="tel:1300" onclick="return confirm('แน่ใจว่าจะโทรออก 1300 หรือไม่?')" class="call-circle">
+                    <i class="fa-solid fa-phone fa-2lg" style="color: #ffffff;"></i>   
+                </a>
+            </div>
+        </div>
+
+        <div class="card-six">
+            <img src="img/flood.jpg" alt="flood">
+            <div class="card-content">
+                <h3>192 แจ้งเหตุภัยพิบัติ</h3>
+                <p>โทร 192 เพื่อแจ้งเหตุที่เกิดจากภัยพิบัติ</p>
+                <p class="agency">ศูนย์เตือนภัยพิบัติแห่งชาติ</p>
+                <a href="tel:192" onclick="return confirm('แน่ใจว่าจะโทรออก 192 หรือไม่?')" class="call-circle">
+                    <i class="fa-solid fa-phone fa-2lg" style="color: #ffffff;"></i>   
+                </a>
+            </div>
+        </div>
+
+        <div class="card-seven">
+            <img src="img/water disasterr.jpg" alt="disaster">
+            <div class="card-content">
+                <h3>1196 แจ้งเหตุภัยพิบัติทางน้ำ</h3>
+                <p>โทร 1196 เพื่อแจ้งเหตุที่เกิดจากภัยพิบัติทางน้ำ</p>
+                <p class="agency">กองบังคับการตำรวจน้ำ</p>
+                <a href="tel:1196" onclick="return confirm('แน่ใจว่าจะโทรออก 1196 หรือไม่?')" class="call-circle">
+                    <i class="fa-solid fa-phone fa-2lg" style="color: #ffffff;"></i>   
+                </a>
+            </div>
+        </div>
+        <div class="card-eight">
+            <img src="img/rescue11.jpg" alt="rescue">
+            <div class="card-content">
+            <h3>1784 ขอความช่วยเหลือจากเหตุภัยพิบัติ</h3>
+            <p>โทร 1784 เพื่อขอความช่วยเหลือจากเหตุภัยพิบัติ</p>
+            <p>กรมป้องกันและบรรเทาสาธารณะภัย</p>
+            <a href="tel:1784" onclick="return confirm('แน่ใจว่าจะโทรออก 1784 หรือไม่?')" class="call-circle">
+              <i class="fa-solid fa-phone fa-2lg" style="color: #ffffff;"></i>   
+            </a>
+            </div>
+        </div>
+
+        <div class="card-nine">
+            <img src="img/ambulance999.jpg" alt="ambulance">
+            <div class="card-content">
+                <h3>1418 แจ้งเหตุด่วนเหตุร้ายทุกชนิด</h3>
+                <p>โทร 1418 เพื่อแจ้งเหตุด่วนกับมูลนิธิป่อเต็กตึ๊ง</p>
+                <p>มูลนิธิป่อเต็กตึ๊ง</p>
+                <a href="tel:1418" onclick="return confirm('แน่ใจว่าจะโทรออก 1418 หรือไม่?')" class="call-circle">
+                    <i class="fa-solid fa-phone fa-2lg" style="color: #ffffff;"></i>   
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer>   
+        <div class="footer-container">
+            <!-- footer left -->
+             <div class="footer-left">
+                <h2>HelpLine</h2>
+             </div>
+             <!-- footer right -->
+              <div class="footer-right">
+                <p>เว็บไซต์นี้รวบรวมเบอร์โทรฉุกเฉินและข้อมูลของหน่วยงานต่างๆ</p>
+                <p>เพื่อให้คุณสามารถเข้าถึงบริการได้อย่างรวดเร็วและสะดวก</p>
+              </div>
+        </div>
+     </footer>
+     
+</body>
+</html>

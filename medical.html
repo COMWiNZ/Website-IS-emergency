@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>การแพทย์ - HelpLine</title>
+    <link rel="stylesheet" href="medical.css">
+    <script src="https://kit.fontawesome.com/b45c5f1a08.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+
+  <header class="header">
+    <nav class="navbar">
+      <!-- logo -->
+        <div class="logo">
+            <a href="index.html" class="logo">HelpLine</a>    
+        </div>
+
+        <!-- responsive navbar for phone -->
+        <div class="menu-icon" onclick="toggleMenu()">
+          <i class="fa-solid fa-bars fa-sm" style="color: #000000;"></i>
+        </div>
+        <!-- navbar -->
+        <div class="menu" id="nav-menu">
+          <ul class="list" >
+            <li><a href="emergency.html">เหตุด่วน</a></li>
+            <li><a href="medical.html">การแพทย์</a></li>
+            <li><a href="travle.html">การเดินทาง</a></li>
+            <li><a href="agency.html">หน่วยงาน</a></li>
+            <li><a href="utilities.html">สาธารณูปโภค</a></li>
+          </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div class="header-text">
+    <h1>เบอร์โทรฉุกเฉินเกี่ยวกับการแพทย์</h1>
+    <p>เบอร์โทรฉุกเฉินเพื่อแจ้งเหตุฉุกเฉินทางการแพทย์</p>
+  </div>
+
+  <div class="card-container">
+    <div class="card-one">
+      <img src="img/ambulance run.jpg" alt="ambulance">
+      <div class="card-content">
+        <h3>1669 แจ้งเหตุเจ็บป่วยฉุกเฉิน (ทั่วประเทศ)</h3>
+        <p>โทร 1669 เพื่อแจ้งเหตุเจ็บป่วยฉุกเฉิน</p>
+        <p>สถาบันการแพทย์ฉุกเฉินแห่งชาติ</p>
+        <a href="tel:1669" onclick="return confirm('แน่ใจว่าจะโทรออก 1669 หรือไม่?')" class="call-circle">
+          <i class="fa-solid fa-phone fa-2lg" style="color: #ffffff;"></i>   
+        </a>
+      </div>
+    </div>
+
+    <div class="card-two">
+      <img src="img/emergency ambulance (2).jpg" alt="ambulance and emergency lights">
+      <div class="card-content">
+        <h3>1646 แจ้งเหตุเจ็บป่วยฉุกเฉิน (กทม.)</h3>
+        <p>โทร 1646 เพื่อแจ้งเหตุเจ็บป่วยฉุกเฉิน</p>
+        <p>หน่วยแพทย์ฉุกเฉิน (กทม.)</p>
+        <a href="tel:1646" onclick="return confirm('แน่ใจว่าจะโทรออก 1646 หรือไม่?')" class="call-circle">
+          <i class="fa-solid fa-phone fa-2lg" style="color: #ffffff;"></i>   
+        </a>
+      </div>
+    </div>
+
+    <div class="card-three">
+      <img src="img/surgery-1822458_1280.jpg" alt="emergency">
+      <div class="card-content">
+        <h3>1554 ขอความช่วยเหลือทางการแพทย์ฉุกเฉิน</h3>
+        <p>โทร 1554 เพื่อขอความช่วยเหลือทางการแพทย์ฉุกเฉิน</p>
+        <p>หน่วยแพทย์ช่วยชีวิต วชิรพยาบาล</p>
+        <a href="tel:1554" onclick="return confirm('แน่ใจว่าจะโทรออก 1554 หรือไม่?')" class="call-circle">
+          <i class="fa-solid fa-phone fa-2lg" style="color: #ffffff;"></i>   
+        </a>
+      </div>
+    </div>
+
+    <div class="card-four">
+      <img src="img/medical guide.jpg" alt="medical guide">
+      <div class="card-content">
+        <h3>0-2207-6000 ประสานงานทางการแพทย์ฉุกเฉิน</h3>
+        <p>โทร 0-2207-6000 เพื่อขอรถพยาบาลด่วน หรือคำแนะนำทางการแพทย์</p>
+        <p>โรงพยาบาลตำรวจ</p>
+        <a href="tel:022076000" onclick="return confirm('แน่ใจว่าจะโทรออก 0-2207-6000 หรือไม่?')" class="call-circle">
+          <i class="fa-solid fa-phone fa-2lg" style="color: #ffffff;"></i>   
+        </a>
+      </div>
+    </div>
+
+    <div class="card-five">
+      <img src="img/medical-563427_1280.jpg" alt="psychiatrist">
+      <div class="card-content">
+        <h3>1667 ขอความช่วยปัญหาทางสุขภาพจิต</h3>
+        <p>โทร 1667 เพื่อขอความช่วยเหลือ หรือคำแนะนำเกี่ยวกับปัญหาทางสุขภาพจิต</p>
+        <p>สายด่วนกรมสุขภาพจิต</p>
+        <a href="tel:1667" onclick="return confirm('แน่ใจว่าจะโทรออก 1667 หรือไม่?')" class="call-circle">
+          <i class="fa-solid fa-phone fa-2lg" style="color: #ffffff;"></i>   
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- footer -->
+  <footer>   
+    <div class="footer-container">
+        <!-- footer left -->
+         <div class="footer-left">
+            <h2>HelpLine</h2>
+         </div>
+         <!-- footer right -->
+          <div class="footer-right">
+            <p>เว็บไซต์นี้รวบรวมเบอร์โทรฉุกเฉินและข้อมูลของหน่วยงานต่างๆ</p>
+            <p>เพื่อให้คุณสามารถเข้าถึงบริการได้อย่างรวดเร็วและสะดวก</p>
+          </div>
+    </div>
+ </footer>
+ 
+</body>
+</html>

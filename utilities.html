@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สาธารณูปโภค - HelpLine</title>
+    <link rel="stylesheet" href="utilities.css">
+    <script src="https://kit.fontawesome.com/b45c5f1a08.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <!-- logo -->
+            <div class="logo">
+                <a href="index.html" class="logo">HelpLine</a>    
+            </div>
+            <!-- responsive navbat for phone -->
+             <div class="menu-icon" onclick="toggleMenu()">
+                <i class="fa-solid fa-bars fa-sm" style="color: #000000;"></i>
+             </div>
+            <!-- navbar -->
+            <div class="menu" id="nav-menu">
+                <ul class="list">
+                    <li><a href="emergency.html">เหตุด่วน</a></li>
+                    <li><a href="medical.html">การแพทย์</a></li>
+                    <li><a href="travle.html">การเดินทาง</a></li>
+                    <li><a href="agency.html">หน่วยงาน</a></li>
+                    <li><a href="utilities.html">สาธารณูปโภค</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="header-text">
+        <h1>เบอร์โทรฉุกเฉินเกี่ยวกับสาธารณูปโภค</h1>
+        <p>เบอร์โทรฉุกเฉินเพื่อแจ้งเหตุสาธารณูปโภค</p>
+    </div>
+
+    <div class="card-container">
+
+        <div class="card-one">
+            <img src="img/electric pro.jpg" alt="electric">
+            <div class="card-content">
+                <h3>1129 แจ้งเหตุไฟฟ้าขัดข้อง (ทั่วประเทศ)</h3>
+                <p>โทร 1129 เพื่อแจ้งเหตุไฟฟ้าขัดข้อง หรือสอบถามต่างๆ</p>
+                <p>การไฟฟ้าส่วนภูมิภาค PEA</p>
+                <a href="tel:1129" onclick="return confirm('แน่ใจว่าจะโทรออก 1129 หรือไม่?')" class="call-circle">
+                    <i class="fa-solid fa-phone fa-2lg" style="color: #ffffff;"></i>   
+                </a>
+            </div>
+        </div>
+
+        <div class="card-two">
+            <img src="img/electric workers.jpg" alt="electric">
+            <div class="card-content">
+                <h3>1130 แจ้งเหตุไฟฟ้าขัดข้อง (กรุงเทพฯ นนทบุรี สมุทรปราการ)</h3>
+                <p>โทร 1130 เพื่อแจ้งเหตุไฟฟ้าขัดข้อง หรือสอบถามต่างๆในพื้นที่ที่ระบุ</p>
+                <p>การไฟฟ้านครหลวง MEA</p>
+                <a href="tel:1130" onclick="return confirm('แน่ใจว่าจะโทรออก 1130 หรือไม่?')" class="call-circle">
+                    <i class="fa-solid fa-phone fa-2lg" style="color: #ffffff;"></i>   
+                </a>
+            </div>
+        </div>
+
+        <div class="card-three">
+            <img src="img/water splashing hands.jpg" alt="water">
+            <div class="card-content">
+                <h3>1162 แจ้งปัญหาเกี่ยวกับน้ำประปา (ทั่วประเทศ)</h3>
+                <p>โทร 1162 เพื่อแจ้งปัญหาเกี่ยวกับน้ำประปา หรือสอบถามข้อมูล</p>
+                <p>การประปาส่วนภูมิภาค</p>
+                <a href="tel:1162" onclick="return confirm('แน่ใจว่าจะโทรออก 1162 หรือไม่?')" class="call-circle">
+                    <i class="fa-solid fa-phone fa-2lg" style="color: #ffffff;"></i>   
+                </a>
+            </div>
+        </div>
+
+        <div class="card-four">
+            <img src="img/tap water utilities.jpg" alt="water">
+            <div class="card-content">
+                <h3>1125 แจ้งปัญหาเกี่ยวกับน้ำประปา (กรุงเทพฯ นนทบุรี สมุทรปราการ)</h3>
+                <p>โทร 1125 เพื่อแจ้งปัญหาเกี่ยวกับน้ำประปา หรือสอบถามข้อมูล</p>
+                <p>การประปานครหลวง</p>
+                <a href="tel:1125" onclick="return confirm('แน่ใจว่าจะโทรออก 1125 หรือไม่?')" class="call-circle">
+                    <i class="fa-solid fa-phone fa-2lg" style="color: #ffffff;"></i>   
+                </a>
+            </div>
+        </div>
+
+        <div class="card-five">
+            <img src="img/people on street.jpg" alt="crowd people on street">
+            <div class="card-content">
+                <h3>1506 ติดต่อดำเนินการ สอบถามข้อมูล</h3>
+                <p>โทร 1506 เพื่อติดต่อดำเนินการเรื่องที่เกี่ยวข้อง สอบถามข้อมูล</p>
+                <p>สำนักงานประกันสังคม</p>
+                <a href="tel:1506" onclick="return confirm('แน่ใจว่าจะโทรออก 1506 หรือไม่?')" class="call-circle">
+                    <i class="fa-solid fa-phone fa-2lg" style="color: #ffffff;"></i>   
+                </a>
+            </div>
+        </div>
+
+        <div class="card-six">
+            <img src="img/denmark post.jpg" alt="post">
+            <div class="card-content">
+                <h3>1505 สอบถามข้อมูลพัสดุ หรือแจ้งปัญหา</h3>
+                <p>โทร 1505 เพื่อสอบถามข้อมูล หรือแจ้งปัญหาเกี่ยวกับไปรษณีย์</p>
+                <p>ไปรษณีย์ไทย</p>
+                <a href="tel:1505" onclick="return confirm('แน่ใจว่าจะโทรออก 1505 หรือไม่?')" class="call-circle">
+                    <i class="fa-solid fa-phone fa-2lg" style="color: #ffffff;"></i>   
+                </a>
+            </div>
+        </div>
+
+        <d class="card-seven">
+            <img src="img/bangkok temple.jpg" alt="bangkok">
+            <div class="card-content">
+                <h3>1555 แจ้งปัญหาในพื้นที่กรุงเทพฯ</h3>
+                <p>โทร 1555 เพื่อแจ้งปัญหาในพื้นที่กรุงเทพฯ</p>
+                <p>ศูนย์รับเรื่องร้องทุกข์ กทม.</p>
+                <a href="tel:1555" onclick="return confirm('แน่ใจว่าจะโทรออก 1555 หรือไม่?')" class="call-circle">
+                    <i class="fa-solid fa-phone fa-2lg" style="color: #ffffff;"></i>   
+                </a>
+            </div>
+        </div>
+         
+    </div>
+
+    <footer>   
+        <div class="footer-container">
+            <!-- footer left -->
+             <div class="footer-left">
+                <h2>HelpLine</h2>
+             </div>
+             <!-- footer right -->
+              <div class="footer-right">
+                <p>เว็บไซต์นี้รวบรวมเบอร์โทรฉุกเฉินและข้อมูลของหน่วยงานต่างๆ</p>
+                <p>เพื่อให้คุณสามารถเข้าถึงบริการได้อย่างรวดเร็วและสะดวก</p>
+              </div>
+        </div>
+     </footer>
+     
+</body>
+</html>

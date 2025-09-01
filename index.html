@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>หน้าหลัก - HelpLine</title>
+    <script src="https://kit.fontawesome.com/b45c5f1a08.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    
+    <header class="header">
+        <nav class="navbar">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="index.html" class="logo">HelpLine</a>    
+            </div>
+            <!-- responsive navbar for phone -->
+            <div class="menu-icon" onclick="toggleMenu()">
+                <i class="fa-solid fa-bars fa-sm" style="color: #000000;"></i>
+            </div>
+            <!-- navbar -->
+            <div class="menu" id="nav-menu">
+                <ul class="list">
+                    <li><a href="emergency.html">เหตุด่วน</a></li>
+                    <li><a href="medical.html">การแพทย์</a></li>
+                    <li><a href="travle.html">การเดินทาง</a></li>
+                    <li><a href="agency.html">หน่วยงาน</a></li>
+                    <li><a href="utilities.html">สาธารณูปโภค</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="mainpage">
+        <h1 class="main-text">ต้องการความช่วยเหลือ?</h1>
+        <p class="notmain-text">ค้นหาเบอร์โทรฉุกเฉิน หน่วยงาน ประเภทเหตุฉุกเฉิน</p>
+        <!-- searchbar -->
+        <div class="search-container">
+            <form action="#" class="search-bar">
+            <input type="text" id="searchInput" class="search-input" placeholder="ค้นหาเบอร์โทรฉุกเฉิน...">
+            </form>
+            <button type="submit" class="search-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" class="search-btn-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            </button>
+        </div>
+    </div>
+
+    <div class="card-container">
+        <div class="emergency-card-I">
+            <i class="fa-solid fa-car-burst fa-5x" style="color: #e50914;"></i>
+            <h6 class="cardtext-header">เกิดเหตุการณ์อุบัติเหตุ</h6>
+            <ul class="card">
+                <li class="card-text">ตั้งสติ ตรวจสอบตนเองและผู้อื่น</li>
+                <li class="card-text">บันทึกหลักฐาน แจ้งหน่วยฉุกเฉิน</li>
+            </ul>
+        </div>  
+
+        <div class="emergency-card-II">
+            <i class="fa-solid fa-phone-volume fa-4x" style="color: #e50914;"></i>
+            <h6 class="cardtext-header">ติดต่อเบอร์ฉุกเฉิน</h6>
+            <ul class="card">
+                <li class="card-text">โทรติดต่อเบอร์ฉุกเฉินเมื่อเกิด</li>
+                <li class="card-text">เหตุฉุกเฉินขึ้น</li>
+            </ul>
+        </div>
+
+        <div class="emergency-card-III">
+            <i class="fa-solid fa-xmark fa-5x" style="color: #e50914;"></i>
+            <h6 class="cardtext-header">สิ่งที่ไม่ควรทำเมื่อเกิดอุบัติเหตุ</h6>
+            <ul class="card">
+                <li class="card-text">หนีจากที่เกิดเหตุ ไม่แจ้งเจ้าหน้าที่</li>
+                <li class="card-text">ทะเลาะวิวาท เป็นต้น</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="number">
+        <h1 class="number-header">เบอร์โทรฉุกเฉินสำคัญที่ควรรู้</h1>
+        <p class="number-p">รวมเบอร์โทรฉุกเฉินสำคัญ เพื่อให้คุณได้รับความช่วยเหลือได้ทันเวลา</p>
+    </div>
+
+    <!-- number card -->
+     <div class="number-card">
+        <div class="number-card-I">
+            <img src="img/ambulance run.jpg">
+            <div class="card-content">
+                <h3>1669 เจ็บป่วยฉุกเฉิน</h3>
+                <p>โทร 1669 เพื่อแจ้งเหตุเจ็บป่วยฉุกเฉิน</p>
+                <p>สถาบันการแพทย์ฉุกเฉินแห่งชาติ</p>
+            </div>
+        </div>
+
+        <div class="number-card-II">
+            <img src="img/police 4.jpg">
+            <div class="card-content-II">
+                <h3>191 แจ้งเหตุด่วน</h3>
+                <p>โทร 191 เพื่อแจ้งเหตุด่วน</p>
+                <p>สำนักงานตำรวจแห่งชาติ</p>
+            </div>
+        </div>
+
+        <div class="number-card-III">
+            <img src="img/matt-c-newCTAG6kPE-unsplash.jpg">
+            <div class="card-content-III">
+                <h3>199 เพลิงไหม้</h3>
+                <p>โทร 199 เพื่อแจ้งเหตุเพลิงไหม้</p>
+                <p>หน่วยดับเพลิงและกู้ภัย</p>
+            </div>
+        </div>
+     </div>
+                                     
+     <footer>   
+        <div class="footer-container">
+            <!-- footer left -->
+             <div class="footer-left">
+                <h2>HelpLine</h2>
+             </div>
+             <!-- footer right -->
+              <div class="footer-right">
+                <p>เว็บไซต์นี้รวบรวมเบอร์โทรฉุกเฉินและข้อมูลของหน่วยงานต่างๆ</p>
+                <p>เพื่อให้คุณสามารถเข้าถึงบริการได้อย่างรวดเร็วและสะดวก</p>
+              </div>
+        </div>
+     </footer>
+</body>
+</html>

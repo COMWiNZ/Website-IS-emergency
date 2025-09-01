@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>หน่วยงาน - HelpLine</title>
+    <link rel="stylesheet" href="agency.css">
+    <script src="https://kit.fontawesome.com/b45c5f1a08.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+          <!-- logo -->
+            <div class="logo">
+                <a href="index.html" class="logo">HelpLine</a>    
+            </div>
+            <!-- responsive navbar for phone -->
+            <div class="menu-icon" onclick="toggleMenu()">
+              <i class="fa-solid fa-bars fa-sm" style="color: #000000;"></i>
+            </div> 
+            <!-- navbar -->
+             <div class="menu" id="nav-menu">
+                <ul class="list">
+                  <li><a href="emergency.html">เหตุด่วน</a></li>
+                  <li><a href="medical.html">การแพทย์</a></li>
+                  <li><a href="travle.html">การเดินทาง</a></li>
+                  <li><a href="agency.html">หน่วยงาน</a></li>
+                  <li><a href="utilities.html">สาธารณูปโภค</a></li>
+                </ul>
+            </div>
+        </nav>
+      </header>
+
+      <div class="header-text">
+        <h1>เบอร์โทรฉุกเฉินเกี่ยวกับหน่วยงานและองค์กรทั่วไป</h1>
+        <p>เบอร์โทรฉุกเฉินเพื่อแจ้งเหตุฉุกเฉินกับหน่วยงาน หรือองค์กรต่างๆ</p>
+      </div>
+
+      <div class="card-container">
+
+        <div class="card-one">
+            <img src="img/ref.jpg" alt="lonely">
+            <div class="card-content">
+                <h3>1165 ปรึกษาเลิกยาเสพติด</h3>
+                <p>โทร 1165 เพื่อปรึกษาเลิกยาเสพติด</p>
+                <p>สายด่วนยาเสพติด สถาบันธัญญารักษ์</p>
+                <a href="tel:1165" onclick="return confirm('แน่ใจว่าจะโทรออก 1165 หรือไม่?')" class="call-circle">
+                    <i class="fa-solid fa-phone fa-2lg" style="color: #ffffff;"></i>   
+                </a>
+            </div>
+        </div>
+
+        <div class="card-two">
+            <img src="img/lonely.jpg" alt="ref">
+              <div class="card-content">
+                <h3>1386 แจ้งเบาะแส ร้องเรียนการกระทำผิดเกี่ยวกับยาเสพติด</h3>
+                <p>โทร 1386 เพื่อแจ้งเบาะแส ร้องเรียนการกระทำผิดเกี่ยวกับยาเสพติด</p>
+                <p>ศูนย์รับแจ้งข่าวปราบปรามยาเสพติด</p>
+                <a href="tel:1386" onclick="return confirm('แน่ใจว่าจะโทรออก 1386 หรือไม่?')" class="call-circle">
+                  <i class="fa-solid fa-phone fa-2lg" style="color: #ffffff;"></i>   
+                </a>
+              </div>
+         </div>
+
+         <div class="card-three">
+            <img src="img/Laos_.jpg" alt="kids">
+              <div class="card-content">
+                <h3>1134 แจ้งเบาะแส ให้ความช่วยเหลือเด็ก</h3>
+                <p>โทร 1134 เพื่อแจ้งเบาะแส และให้ความช่วยเหลือเด็ก</p>
+                <p>มูลนิธิปวีณา หงสกุล</p>
+                <a href="tel:1134" onclick="return confirm('แน่ใจว่าจะโทรออก 1134 หรือไม่?')" class="call-circle">
+                  <i class="fa-solid fa-phone fa-2lg" style="color: #ffffff;"></i>   
+                </a>
+              </div>
+         </div>
+    </div>
+
+    <footer>   
+      <div class="footer-container">
+          <!-- footer left -->
+           <div class="footer-left">
+              <h2>HelpLine</h2>
+           </div>
+           <!-- footer right -->
+            <div class="footer-right">
+              <p>เว็บไซต์นี้รวบรวมเบอร์โทรฉุกเฉินและข้อมูลของหน่วยงานต่างๆ</p>
+              <p>เพื่อให้คุณสามารถเข้าถึงบริการได้อย่างรวดเร็วและสะดวก</p>
+            </div>
+      </div>
+   </footer>
+
+</body>
+</html>

@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: #f5f4f6;
+}
+.logo {
+  color: black;
+  font-weight: bold;
+  font-size: 26px;
+  text-decoration: none;
+  padding-left: 10px;
+  margin-top: 0px;
+  margin-left: 10px;
+}
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: white;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 0px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: "Prompt", sans-serif;
+}
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: "Prompt", sans-serif;
+}
+.navbar ul li {
+  display: inline-block;
+  margin-right: 20px;
+  font-family: "Prompt", sans-serif;
+}
+nav ul li a {
+  text-decoration: none; /* ลบเส้นใต้ Link */
+  color: black;
+  padding: 10px 15px; /* กำหนด Padding ให้ Link ดูดีขึ้น */
+  font-family: "Prompt", sans-serif;
+  position: relative;
+}
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+
+nav ul li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.header-text h1 {
+  text-align: center;
+  font-family: "Prompt",sans-serif;
+  font-size: 50px;
+  margin-top: 50px;
+}
+.header-text p {
+  font-family: "Prompt",sans-serif;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 1px;
+}
+.call-circle {
+  width: 40px;
+  height: 40px;
+  background-color: #e50914;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 24px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease;
+  margin-top: 5px;
+}
+.card-one,
+.card-two,
+.card-three,
+.card-four,
+.card-five,
+.card-six,
+.card-seven {
+  width: 325px;
+  background-color: white;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+.card-one img,
+.card-two img,
+.card-three img,
+.card-four img,
+.card-five img,
+.card-six img,
+.card-seven img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+}
+.card-content {
+  padding: 10px;
+}
+.card-content h3 {
+  font-size: 24px;
+  font-family: "Prompt", sans-serif;
+  margin-bottom: 8px;
+  margin-top: 10px; 
+}
+.card-content p {
+  font-size: 16px;
+  font-family: "Prompt", sans-serif;
+  color: #666;
+  margin-bottom: 0px;
+}
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* สามารถปรับขนาดได้อัตโนมัติ */
+  gap: 20px;
+  padding: 20px;
+  justify-items: center;
+}
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+footer {
+  background-color: black;
+  color: white;
+  padding: 20px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.footer-left h2 {
+  font-family: "Prompt", sans-serif;
+  font-weight: bold;
+  margin: 0; 
+}
+
+.footer-right {
+  text-align: right;
+}
+
+.footer-right p {
+  font-family: "Prompt", sans-serif;
+  margin: 0; 
+  line-height: 1.5; 
+}
+.menu {
+  display: flex;
+  gap: 20px;
+}
+
+.menu-icon {
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+/* ipad */
+@media only screen and (min-width: 768px)  and (max-width: 1000px) {
+  .logo {
+    font-size: 20px;
+  }
+  .navbar ul li a {
+    font-size: 14px;
+  }
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* phone */
+@media (max-width: 600px) {
+  .logo {
+    font-size: 24px; 
+  }
+  .menu {
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    position: absolute;
+    top: 70px; 
+    right: 20px;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+    padding: 10px 0;
+  }
+  .menu.active {
+    display: flex;
+  }
+  .menu-icon {
+    display: block;
+    color: black;
+    margin-right: 20px;
+  } 
+  .menu ul.list {
+    flex-direction: column;
+    padding: 0;
+  }
+  .menu ul.list li {
+    display: block;
+    padding: 10px 20px;
+  }
+  .menu ul.list li a {
+    display: block;
+    color: black;
+    font-weight: 500;
+  }
+  .header-text h1 {
+    font-size: 30px;
+  }
+  .header-text p {
+    font-size: 16px;
+  }
+  .card-container {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px; 
+    padding: 20px;
+    justify-items: center;
+    align-items: center;
+  }
+  .card-one,
+  .card-two,
+  .card-three,
+  .card-four,
+  .card-five,
+  .card-six,
+  .card-seven {
+    width: 100%; 
+    max-width: 325px; 
+    background-color: white;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    margin: 20px 0; 
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+}
